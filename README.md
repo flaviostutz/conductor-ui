@@ -64,3 +64,5 @@ services:
 * Run "docker-compose up"
 
 * Open browser at http://localhost:5000
+
+* Following instructions at https://netflix.github.io/conductor/labs/kitchensink/ to see and understand how the example works
