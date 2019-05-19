@@ -27,7 +27,7 @@ WORKDIR /tmp
 RUN git clone https://github.com/Netflix/conductor.git
 WORKDIR /tmp/conductor
 RUN git checkout tags/$CONDUCTOR_VERSION
-RUN cp -rp docker/ui/bin/ /app \
+RUN cp -rp docker/ui/bin/* /app/ \
     && cp -rp ui /app/ \
     && rm -rf /tmp/*
 
@@ -35,6 +35,8 @@ RUN cp -rp docker/ui/bin/ /app \
 WORKDIR /app/ui
 RUN npm install \
     && npm run build --server
+
+RUN chmod +x /app/startup.sh
 
 EXPOSE 5000
 
