@@ -1,4 +1,7 @@
 # conductor-ui
+
+[<img src="https://img.shields.io/docker/automated/flaviostutz/conductor-ui"/>](https://hub.docker.com/r/flaviostutz/conductor-ui)
+
 Netflix's Conductor UI
 
 ## Usage
